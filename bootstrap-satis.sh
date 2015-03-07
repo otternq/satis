@@ -1,10 +1,9 @@
 #!/bin/bash
 
 if [ -z "$$GITHUB_TOKEN" ]; then
-  echo 'no token';
-  exit 1;
+  echo 'no GitHub token provided';
 else
-  echo 'setting github token';
+  echo 'setting GitHub token';
   (cd /opt/satis-stage/satis; php ../composer.phar --global config github-oauth.github.com $GITHUB_TOKEN)
 fi
 
