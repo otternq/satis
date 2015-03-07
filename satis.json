@@ -1,0 +1,10 @@
+{
+  "name": "My Repository",
+  "homepage": "http://packages.example.org",
+  "repositories": [
+    { "type": "vcs", "url": "https://github.com/composer/satis.git" }
+  ],
+  "require": {
+    "composer/satis": "*"
+  }
+}
